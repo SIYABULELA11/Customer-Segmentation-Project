@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honours Project | Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a href="index.html" class="brand">Computer Science Honours Project</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="page2.html" aria-current="page">Project Details</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tabs-panel" aria-label="Content tabs">
+        <div class="tab-list" role="tablist" aria-label="Project tabs">
+          <button class="tab-button active" id="tab-term1" role="tab" aria-selected="true" aria-controls="panel-term1">Term 1</button>
+          <button class="tab-button" id="tab-term2" role="tab" aria-selected="false" aria-controls="panel-term2">Term 2</button>
+          <button class="tab-button" id="tab-term3" role="tab" aria-selected="false" aria-controls="panel-term3">Term 3</button>
+          <button class="tab-button" id="tab-term4-final" role="tab" aria-selected="false" aria-controls="panel-term4-final">Term 4 Final</button>
+        </div>
+
+        <div class="tab-content">
+          <article class="tab-pane active" id="panel-term1" role="tabpanel" aria-labelledby="tab-term1">
+            <h2>Term 1</h2>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#">The Report</a>
+              <a class="btn btn-primary" href="#">PowerPoint Slides</a>
+            </div>
+          </article>
+          <article class="tab-pane" id="panel-term2" role="tabpanel" aria-labelledby="tab-term2" hidden>
+            <h2>Term 2</h2>
+          </article>
+          <article class="tab-pane" id="panel-term3" role="tabpanel" aria-labelledby="tab-term3" hidden>
+            <h2>Term 3</h2>
+          </article>
+          <article class="tab-pane" id="panel-term4-final" role="tabpanel" aria-labelledby="tab-term4-final" hidden>
+            <h2>Term 4 Final</h2>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="tabs.js"></script>
+</body>
+</html>
